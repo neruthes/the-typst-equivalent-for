@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- data.doc_title %> | TTEF Dictionary</title>
+    <style>
+        <%- include('styles.css') %>
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <!-- <div class="wrapper"> -->
+
+        <%- include('body_header.html') %>
+            <div class="content">
+                <div class="wrapper">
+                    <div class="content-top">
+                        <nav>
+                            <a href="../">Home</a> / <%- data.bare_name %>
+                        </nav>
+                    </div>
+                    <div class="content-title">
+                        <h2><%- data.page_title %></h2>
+                    </div>
+                    <div>
+                        <aside>
+                            Last modified:
+                            <time datetime="<%- data.modif_time %>"><%- data.modif_time.slice(0, 10) %></time>
+
+                        </aside>
+                    </div>
+                    <div class="content-body serif">
+                        <!-- Main content -->
+                        <%- data.text %>
+                    </div>
+
+                </div>
+            </div>
+
+            <%- include('grand_footer.html') %>
+                <!-- </div> -->
+    </div>
+
+</body>
+
+</html>
