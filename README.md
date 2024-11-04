@@ -2,6 +2,8 @@
 
 A dictionary mapping LaTeX to Typst.
 
+https://neruthes.github.io/the-typst-equivalent-for/
+
 
 
 
