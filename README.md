@@ -6,14 +6,23 @@ https://neruthes.github.io/the-typst-equivalent-for/
 
 
 
+## Contributing
 
-## File Naming Convention
+Create a new Markdown file in `/db`. And send a pull request.
+
+
+### File Naming Convention
 
 | Prefix         | Usage                                     |
 | -------------- | ----------------------------------------- |
 | Plus `+`       | Package name like `\usepackage{fontspec}` |
 | Underscore `_` | Concept word like `glue`                  |
 | No Prefix      | Command like `\rmfamily`                  |
+
+
+
+
+
 
 
 ## Building
@@ -24,13 +33,9 @@ https://neruthes.github.io/the-typst-equivalent-for/
 ./make.sh db/
 ```
 
-### Main List
 
-/dist/index.html
 
-### Individual Pages
 
-/dist/db/{{WORD}}.html
 
 
 
