@@ -49,11 +49,25 @@ header {
     opacity: 0.5;
 }
 
+.content pre {
+    background-color: rgba(0,0,0,0.05);
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 footer {
     font-size: 13px;
     padding: 40px 0;
     border-top: 1px solid #DDD;
 }
+
+
+.index_main_list li {
+    font-size: 19px;
+    padding: 7px 0;
+}
+
 
     </style>
 </head>
@@ -79,15 +93,30 @@ footer {
                         <div>
                             <h2>What is the Typst equivalent for...</h2>
                         </div>
-                        <ul>
+                        <ul class="index_main_list">
                             <li>
             <a href="./db/_glue.html">
-                _glue
+                glue
+            </a>
+        </li>
+<li>
+            <a href="./db/hfill.html">
+                \hfill
             </a>
         </li>
 <li>
             <a href="./db/input.html">
                 \input
+            </a>
+        </li>
+<li>
+            <a href="./db/pagebreak.html">
+                \pagebreak
+            </a>
+        </li>
+<li>
+            <a href="./db/vfill.html">
+                \vfill
             </a>
         </li>
                         </ul>

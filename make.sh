@@ -2,8 +2,13 @@
 
 case $1 in
     '')
-        hello
+        ./make.sh db/
         ;;
     db | db/ )
         node src/makepages.js
+        ;;
+    new )
+        git add db &&
+        git commit -m 'Add new entry'
+        ;;
 esac

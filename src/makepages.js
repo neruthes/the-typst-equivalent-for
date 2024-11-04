@@ -3,6 +3,7 @@ const ejs = require('ejs');
 const marked = require('marked');
 
 const files_arr = fs.readdirSync('db');
+files_arr.sort((a,b) => (''+a).localeCompare(b));
 console.log(`Processing ${files_arr.length} entries...`);
 
 
@@ -29,9 +30,11 @@ async function getLastModifiedTime(filePath) {
 const get_fancy_name = function (bare_name) {
     let fancy_name = bare_name;
     if (bare_name[0] === '+') {
-        // Do nothing for package name
+        // for package name
+        fancy_name = fancy_name.slice(1);
     } else if (bare_name[0] === '_') {
-        // Do nothing
+        // for concept word
+        fancy_name = fancy_name.slice(1);
     } else {
         // It is a command! Should add backslash as prefix!
         fancy_name = '\\' + fancy_name;

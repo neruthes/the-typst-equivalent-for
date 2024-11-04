@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is the Typst equivalent for _glue? | TTEF Dictionary</title>
+    <title>What is the Typst equivalent for hfill? | TTEF Dictionary</title>
     <style>
         /* @import url('https: //autowflibcdn.pages.dev/awfl-cdn/css/ncm.css'); */
 
@@ -91,24 +91,32 @@ footer {
                 <div class="wrapper">
                     <div class="content-top">
                         <nav>
-                            <a href="../">Home</a> / _glue
+                            <a href="../">Home</a> / hfill
                         </nav>
                     </div>
                     <div class="content-title">
-                        <h2>What is the Typst equivalent for glue?</h2>
+                        <h2>What is the Typst equivalent for \hfill?</h2>
                     </div>
                     <div>
                         <aside>
                             Last modified:
-                            <time datetime="2024-11-04T22:02:59Z
+                            <time datetime="2024-11-04T22:15:26Z
 ">2024-11-04</time>
 
                         </aside>
                     </div>
                     <div class="content-body serif">
                         <!-- Main content -->
-                        <p>There is no glue in Typst.</p>
-<p>See <a href="https://github.com/typst/typst/discussions/3961">#3961</a>.</p>
+                        <pre><code>Hello \hfill World
+Hello #h(1fr); World
+</code></pre>
+<pre><code>1 \hfill 23 \hfill\hfill 456
+1 #h(1fr); 23 #h(2fr); 456
+</code></pre>
+<p>Ref:</p>
+<ul>
+<li><a href="https://typst.app/docs/reference/layout/h/">https://typst.app/docs/reference/layout/h/</a></li>
+</ul>
 
                     </div>
 
