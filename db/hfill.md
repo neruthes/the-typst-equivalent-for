@@ -1,9 +1,11 @@
 ```
-#h(1fr)
+Hello \hfill World
+Hello #h(1fr); World
 ```
 
 ```
-Hello#h(2fr);World
+1 \hfill 23 \hfill\hfill 456
+1 #h(1fr); 23 #h(2fr); 456
 ```
 
 
