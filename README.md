@@ -14,7 +14,13 @@ A dictionary mapping LaTeX to Typst.
 | No Prefix      | Command like `\rmfamily`                  |
 
 
-## Build Targets
+## Building
+
+### Build Command
+
+```sh
+./make.sh db/
+```
 
 ### Main List
 
