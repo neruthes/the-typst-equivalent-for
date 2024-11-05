@@ -2,6 +2,19 @@ const fs = require('fs');
 const ejs = require('ejs');
 const marked = require('marked');
 
+
+
+// Will this add LaTeX highlighting?
+// Unfortunately, no.
+// const markdown = require('markdown-it')();
+// const hljs = require('highlight.js');
+// hljs.registerLanguage('latex', require('highlight.js/lib/languages/latex'));
+// markdown.use(require('markdown-it-highlight'));
+
+
+
+
+
 const files_arr = fs.readdirSync('db');
 files_arr.sort((a,b) => (''+a).localeCompare(b));
 console.log(`Processing ${files_arr.length} entries...`);
@@ -67,6 +80,7 @@ const get_fancy_name = function (bare_name) {
             data: {
                 bare_name, fancy_name, modif_time,
                 text: marked.parse(fs.readFileSync(filepath).toString()),
+                // text: markdown.render(fs.readFileSync(filepath).toString()), // This does not work; why?
                 doc_title: `What is the Typst equivalent for ${bare_name}?`,
                 page_title: `What is the Typst equivalent for ${fancy_name}?`,
             }

@@ -73,7 +73,7 @@ footer {
 </head>
 
 <body>
-    <div class="root">
+    <div class="root sans">
         <!-- <div class="wrapper"> -->
 
         <div>
@@ -95,25 +95,29 @@ footer {
                         </nav>
                     </div>
                     <div class="content-title">
-                        <h2>What is the Typst equivalent for \vfill?</h2>
+                        <h1>What is the Typst equivalent for \vfill?</h1>
                     </div>
                     <div>
                         <aside>
                             Last modified:
-                            <time datetime="2024-11-04T22:16:04Z
-">2024-11-04</time>
+                            <time datetime="2024-11-05T14:40:53Z
+">2024-11-05</time>
 
                         </aside>
                     </div>
                     <div class="content-body serif">
                         <!-- Main content -->
-                        <pre><code>Hello \vfill World
-Hello #v(1fr); World
+                        <h2>LaTeX</h2>
+<pre><code class="language-latex">Hello \vfill World
+
+1 \vfill 23 \vfill\vfill 456
 </code></pre>
-<pre><code>1 \vfill 23 \vfill\vfill 456
+<h2>Typst</h2>
+<pre><code class="language-typst">Hello #v(1fr); World
+
 1 #v(1fr); 23 #v(2fr); 456
 </code></pre>
-<p>Ref:</p>
+<h2>References</h2>
 <ul>
 <li><a href="https://typst.app/docs/reference/layout/v/">https://typst.app/docs/reference/layout/v/</a></li>
 </ul>
