@@ -23,3 +23,4 @@ To unbold on the fly, you must use `#text(weight: "bold")`. You cannot use `*ast
 ## References
 
 - https://typst.app/docs/reference/syntax/
+- https://typst.app/docs/reference/text/text/#parameters-weight
