@@ -49,11 +49,23 @@ header {
     opacity: 0.5;
 }
 
+.content h2 {
+    margin: 2em 0 1em;
+}
+
 .content pre {
     background-color: rgba(0,0,0,0.05);
     border: 1px solid #DDD;
     border-radius: 5px;
     padding: 10px;
+}
+
+.content p code {
+    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 1px 3px;
 }
 
 footer {
@@ -100,7 +112,7 @@ footer {
                     <div>
                         <aside>
                             Last modified:
-                            <time datetime="2024-11-05T14:40:53Z
+                            <time datetime="2024-11-05T15:50:00Z
 ">2024-11-05</time>
 
                         </aside>
@@ -111,11 +123,20 @@ footer {
 <pre><code>\textbf{Bold Text}
 </code></pre>
 <h2>Typst</h2>
-<pre><code>*Bold Text*
+<pre><code>*Bold Text with &quot;strong&quot; semantics*
+
+#strong[Bold Text with explicit strong semantic]
+
+#text(weight: 600)[Bold Text without any semantic implication]
+
+#text(weight: &quot;Bold&quot;)[Bold Text without any semantic implication]
 </code></pre>
+<h2>Scary Fact</h2>
+<p>Use <code>#text(weight: ...)</code> if you need to unbold a piece of text within the bold context. See <a href="./textmd.html">./textmd.html</a>.</p>
 <h2>References</h2>
 <ul>
 <li><a href="https://typst.app/docs/reference/syntax/">https://typst.app/docs/reference/syntax/</a></li>
+<li><a href="https://typst.app/docs/reference/text/text/#parameters-weight">https://typst.app/docs/reference/text/text/#parameters-weight</a></li>
 </ul>
 
                     </div>

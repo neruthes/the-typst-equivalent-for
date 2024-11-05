@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is the Typst equivalent for _glue? | TTEF Dictionary</title>
+    <title>What is the Typst equivalent for textmd? | TTEF Dictionary</title>
     <style>
         /* @import url('https: //autowflibcdn.pages.dev/awfl-cdn/css/ncm.css'); */
 
@@ -103,27 +103,36 @@ footer {
                 <div class="wrapper">
                     <div class="content-top">
                         <nav>
-                            <a href="../">Home</a> / _glue
+                            <a href="../">Home</a> / textmd
                         </nav>
                     </div>
                     <div class="content-title">
-                        <h1>What is the Typst equivalent for glue?</h1>
+                        <h1>What is the Typst equivalent for \textmd?</h1>
                     </div>
                     <div>
                         <aside>
                             Last modified:
-                            <time datetime="2024-11-05T14:40:53Z
+                            <time datetime="2024-11-05T15:50:00Z
 ">2024-11-05</time>
 
                         </aside>
                     </div>
                     <div class="content-body serif">
                         <!-- Main content -->
-                        <p>There is no glue in Typst.</p>
+                        <h2>LaTeX</h2>
+<pre><code class="language-latex">\textbf{\textmd{Unbold piece} within bold context}
+</code></pre>
+<h2>Typst</h2>
+<pre><code class="language-typst">#text(weight: &quot;bold&quot;)[
+    #text(weight: &quot;regular&quot;)[Unbold piece]
+    within bold context
+]
+</code></pre>
+<p>To unbold on the fly, you must use <code>#text(weight: &quot;bold&quot;)</code>. You cannot use <code>*asterisk notation*</code> or <code>#strong</code> command.</p>
 <h2>References</h2>
 <ul>
-<li><a href="https://github.com/typst/typst/discussions/3961">https://github.com/typst/typst/discussions/3961</a></li>
-<li><a href="https://github.com/typst/typst/issues/3442">https://github.com/typst/typst/issues/3442</a></li>
+<li><a href="https://typst.app/docs/reference/syntax/">https://typst.app/docs/reference/syntax/</a></li>
+<li><a href="https://typst.app/docs/reference/text/text/#parameters-weight">https://typst.app/docs/reference/text/text/#parameters-weight</a></li>
 </ul>
 
                     </div>
