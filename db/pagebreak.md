@@ -1,10 +1,19 @@
-```
+## LaTeX
+
+```latex
 \pagebreak
+```
+
+
+
+## Typst
+
+```typst
 #pagebreak()
 ```
 
 
 
-Ref:
+## References
 
 - https://typst.app/docs/reference/layout/pagebreak/

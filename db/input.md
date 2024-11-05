@@ -1,3 +1,10 @@
 Unfortunately, there is no equivalent for `\input` in Typst.
 
-See issue [#4194](https://github.com/typst/typst/issues/4194).
+It is encouraged to use `#import` instead.
+
+
+
+## References
+
+- https://typst.app/docs/reference/scripting/#modules
+- https://github.com/typst/typst/issues/4194
