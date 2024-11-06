@@ -17,7 +17,15 @@
 
 ## Note
 
-Decide font size for your self!
+This is also alternative for `\tabulinesep`.
+
+
+
+## Scary Fact
+
+Be careful with the maintenance and reliability of the `tabu` package.
+
+https://github.com/tabu-issues-for-future-maintainer/tabu/
 
 
 

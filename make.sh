@@ -17,4 +17,8 @@ case $1 in
         git add db &&
         git commit -m 'Add new entry'
         ;;
+    add )
+        cp -a db/large.md "db/$2.md"
+        [[ -e "$GUI_EDITOR" ]] && "$GUI_EDITOR" "db/$2.md"
+        ;;
 esac
