@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What is the Typst equivalent for arraystretch? | TTEF Dictionary</title>
-    <meta property="og:title" content="What is the Typst equivalent for \arraystretch?" />
+    <title>What is the Typst equivalent for write18? | TTEF Dictionary</title>
+    <meta property="og:title" content="What is the Typst equivalent for \write18?" />
     <meta property="og:type" content="article" />
-    <meta property="article:modified_time" content="2024-11-06T19:19:18Z
+    <meta property="article:modified_time" content="2024-11-06T19:22:14Z
 " />
     <style>/* @import url('https: //autowflibcdn.pages.dev/awfl-cdn/css/ncm.css'); */
 
@@ -105,16 +105,16 @@ footer {
                 <div class="wrapper">
                     <div class="content-top">
                         <nav>
-                            <a href="../">Home</a> / arraystretch
+                            <a href="../">Home</a> / write18
                         </nav>
                     </div>
                     <div class="content-title">
-                        <h1>What is the Typst equivalent for \arraystretch?</h1>
+                        <h1>What is the Typst equivalent for \write18?</h1>
                     </div>
                     <div>
                         <aside>
                             Last modified:
-                            <time datetime="2024-11-06T19:19:18Z
+                            <time datetime="2024-11-06T19:22:14Z
 ">2024-11-06</time>
 
                         </aside>
@@ -122,19 +122,14 @@ footer {
                     <div class="content-body serif">
                         <!-- Main content -->
                         <h2>LaTeX</h2>
-<pre><code class="language-latex">\renewcommand{\arraystretch}{1.2}
+<pre><code class="language-latex">\write18{sha256sum mydoc.tex &gt; hash.text}
 </code></pre>
 <h2>Typst</h2>
-<pre><code class="language-typst">#table(row-gutter: 5pt)
-</code></pre>
-<h2>Note</h2>
-<p>This is also alternative for <code>\tabulinesep</code>.</p>
-<h2>Scary Fact</h2>
-<p>Be careful with the maintenance and reliability of the <code>tabu</code> package.</p>
-<p><a href="https://github.com/tabu-issues-for-future-maintainer/tabu/">https://github.com/tabu-issues-for-future-maintainer/tabu/</a></p>
+<p>Typst cannot spawn child process with cmdline.</p>
+<p>Write your own wrapper script or try <a href="https://github.com/ntjess/showman">Showman</a>.</p>
 <h2>References</h2>
 <ul>
-<li><a href="https://typst.app/docs/reference/model/table/#parameters-row-gutter">https://typst.app/docs/reference/model/table/#parameters-row-gutter</a></li>
+<li><a href="https://github.com/typst/typst/discussions/3278">https://github.com/typst/typst/discussions/3278</a></li>
 </ul>
 
                     </div>
