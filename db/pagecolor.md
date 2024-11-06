@@ -9,7 +9,7 @@
 ## Typst
 
 ```typst
-#page(fill: red)
+#set page(fill: red)
 ```
 
 
